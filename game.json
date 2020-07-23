@@ -703,6 +703,15 @@
         "name": "empty-icon.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "images/item-button-border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "images\\item-button-border.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -712,7 +721,7 @@
   "variables": [],
   "layouts": [
     {
-      "b": 194,
+      "b": 251,
       "disableInputWhenNotFocused": true,
       "mangledName": "Game",
       "name": "Game",
@@ -723,7 +732,7 @@
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 194,
+      "v": 251,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -2264,7 +2273,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "item-button-border.png",
+                      "image": "images\\item-button-border.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
