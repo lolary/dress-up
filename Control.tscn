@@ -1,0 +1,64 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://assets/eyes-icon-2.png" type="Texture" id=1]
+[ext_resource path="res://assets/eyes-icon-1.png" type="Texture" id=2]
+[ext_resource path="res://assets/eyes-icon-0.png" type="Texture" id=3]
+[ext_resource path="res://assets/hair-icon-4.png" type="Texture" id=4]
+[ext_resource path="res://assets/hair-icon-2.png" type="Texture" id=5]
+[ext_resource path="res://assets/eyes-icon-3.png" type="Texture" id=6]
+[ext_resource path="res://assets/hair-icon-1.png" type="Texture" id=7]
+[ext_resource path="res://assets/hair-icon-3.png" type="Texture" id=8]
+[ext_resource path="res://assets/hair-icon-0.png" type="Texture" id=9]
+[ext_resource path="res://assets/eyes-icon-4.png" type="Texture" id=10]
+[ext_resource path="res://ItemList.gd" type="Script" id=11]
+[ext_resource path="res://assets/item-button-border.png" type="Texture" id=12]
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 12 )
+region_rect = Rect2( 0, 0, 160, 120 )
+margin_top = 2.3327
+margin_bottom = 0.34407
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_top = 1260.0
+margin_right = 900.0
+margin_bottom = 1600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer"]
+margin_right = 900.0
+margin_bottom = 340.0
+rect_min_size = Vector2( 900, 340 )
+color = Color( 1, 0.894118, 0.882353, 1 )
+
+[node name="ItemList" type="ItemList" parent="CenterContainer"]
+margin_left = 30.0
+margin_right = 870.0
+margin_bottom = 340.0
+rect_min_size = Vector2( 840, 340 )
+mouse_default_cursor_shape = 2
+custom_styles/selected_focus = SubResource( 3 )
+custom_styles/bg_focus = SubResource( 2 )
+custom_styles/bg = SubResource( 1 )
+items = [ "", ExtResource( 3 ), false, "", ExtResource( 2 ), false, "", ExtResource( 1 ), false, "", ExtResource( 6 ), false, "", ExtResource( 10 ), false, "", ExtResource( 9 ), false, "", ExtResource( 7 ), false, "", ExtResource( 5 ), false, "", ExtResource( 8 ), false, "", ExtResource( 4 ), false ]
+max_columns = 5
+same_column_width = true
+icon_mode = 0
+fixed_icon_size = Vector2( 120, 120 )
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
